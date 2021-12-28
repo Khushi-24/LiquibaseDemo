@@ -3,21 +3,25 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
-    <changeSet id="1640238779043-1" author="khushali (generated)">
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1640692828463-1" author="khushali (generated)">
         <createTable tableName="customer">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_customer"/>
             </column>
             <column name="name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet id="1640238779043-2" author="khushali (generated)">
+    <changeSet id="1640692828463-2" author="khushali (generated)">
         <createTable tableName="product">
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_product"/>
             </column>
             <column name="product_name" type="VARCHAR(255)"/>
+            <column name="price" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
+
 </databaseChangeLog>
