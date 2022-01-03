@@ -21,4 +21,10 @@ public class Product {
     @Column(name = "price")
     private Float price;
 
+    @Column(name = "product_brand")
+    private String productBrand;
+
+    @Column(name = "product_description")
+    private String productDescription;
+
 }
