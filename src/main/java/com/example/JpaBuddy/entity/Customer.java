@@ -20,4 +20,8 @@ public class Customer {
     @Column(name = "name")
     private String name;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id")
+    private Product product;
+
 }
